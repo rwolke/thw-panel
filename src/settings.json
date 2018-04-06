@@ -1,0 +1,67 @@
+{
+	"card": {
+		"width": 70,
+		"height": 12,
+		"box" : {
+			"function": {
+				"width": 70,
+				"height": 13,
+				"padding": 2,
+				"align": "center",
+				"style": "bold",
+				"fontSize": [10, 30]
+			},
+			"picture": {
+				"width": 50,
+				"height": 70
+			},
+			"name": {
+				"width": 70,
+				"height": 13,
+				"padding": 2,
+				"align": "center",
+				"style": "bold",
+				"fontSize": [10, 24]
+			},
+			"eb" : {
+				"width": 70,
+				"height": 10,
+				"padding": 2,
+				"align": "center",
+				"style": "normal",
+				"fontSize": [10, 18]
+			},
+			"ausb" : {
+				"width": 70,
+				"height": 8,
+				"padding": 2,
+				"align": "left",
+				"style": "normal",
+				"fontSize": [10, 15]
+			},
+			"ber": {
+				"width": 70,
+				"height": 8,
+				"padding": 2,
+				"align": "center",
+				"style": "normal",
+				"fontSize": [15, 18]
+			},
+			"fail": {
+				"width": 70,
+				"height": 5,
+				"padding": 2,
+				"align": "left",
+				"style": "italic",
+				"fontSize": 10
+			}
+		},
+		"dimensions": {
+			"padding": 2,
+			"photo": {
+				"width": 50,
+				"height": 70
+			}
+		}
+	}
+}

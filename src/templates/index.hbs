@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>THW Fotowand</title>
+		<meta charset="utf-8">
+	</head>
+	<body data-settings='{{{ htmlWebpackPlugin.options.settings }}}'>
+		<main role="main" class="container">
+			<div class="page-header">
+				<h1>THW Fotowand</h1>
+				<p class="lead">
+					Anhand von THWin Auswertungen &amp; Abfragen generiert diese WebApp PDF-Ausdrucke zu Qualifikationen und Berechtigungen für eine Fotowand 
+				</p>
+			</div>
+			<ul class="nav nav-tabs">
+				<li role="presentation" class="nav-item">
+					<a class="nav-link active show" href="#load" role="tab" data-toggle="tab">1. Import</a>
+				</li>
+				<li role="presentation" class="nav-item">
+					<a class="nav-link disabled" href="#select" role="tab" data-toggle="tab">Auswahl</a>
+				</li>
+				<li role="presentation" class="nav-item disabled">
+					<a class="nav-link disabled" href="#out" role="tab" data-toggle="tab">Ausgabe</a>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div id="load" role="tabpanel" class="card tab-pane show active">
+					<div class="card-body">
+						<h5 class="card-title">Die folgenden Berichte müssen in THWin generiert, als CSV abgelegt und hier geladen werden:</h5>
+						<p class="card-text">
+						</p>
+						<div class="uploads"></div>
+						<a href="javascript:App.print()" class="btn btn-primary">PDF</a>
+					</div>
+				</div>
+				<!--	
+					<div class="row">
+						<div class="col-sm-12">
+							<h4>Schlüssel laden</h4>
+						</div>
+					</div>
+					<form action="javascript:void(0);">
+					<div class="row">
+						<div class="col-sm-8 col-sm-offset-2">
+							<div class="panel panel-info">
+								<div class="panel-heading">Schlüsselpaar laden</div>
+								<div class="panel-body">
+									<div class="form-group">
+										<label for="load-data">private Schlüsseldaten</label>
+										<textarea id="load-data" class="form-control" rows="12"></textarea>
+									</div>
+									<div class="form-group">
+										<label for="load-pw">Passwort zum Entschlüsseln</label>
+										<input type="password" class="form-control" id="load-pw">
+									</div>
+								</div>
+								<div class="panel-footer">
+									<button type="submit" class="btn btn-primary center-block" id="loadKeyBtn">Schlüsselpaar laden</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					</form>
+				</div>
+				-->
+			</div>
+    </main><!-- /.container -->
+		<div id="notification" class='notifications top-right'></div>
+	</body>
+</html>
+

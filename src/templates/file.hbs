@@ -1,0 +1,16 @@
+<div class="alert alert-{{status}}">
+	<h5>{{name}}</h5>
+	<p class="text-muted">{{{desc}}}</p>
+	<hr />
+	<form class="box upload" method="post" action="" enctype="multipart/form-data">
+		<div class="d-flex">
+			<input class="d-none" type="file" id="file_{{id}}" />
+			<label class="mb-0 mr-2" for="file_{{id}}">
+				<strong>Datei auswählen</strong> oder <strong>hierhin ziehen.</strong>
+			</label>
+			<div class="result">
+			</div>
+		</div>
+		<div class="result"></div>
+	</form>
+</div>
