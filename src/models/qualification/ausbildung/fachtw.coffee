@@ -5,7 +5,7 @@ module.exports = class FachausbildungProgress extends QualAusb
 		"Ausb. für Bootsführer-Anwärter": ["FGr W (A)", "FGr W (B)"]
 		"Basis II der BGr": ["B1", "B2 (A)", "B2 (B)"]
 		"Basis II der FGr E": ["FGr E"]
-		"Basis II der FGr FK": []
+		"Basis II der FGr FK": ["FGr FK"]
 		"Basis II der FGr W": ["FGr W (A)", "FGr W (B)"]
 		"Basis II der FGr O": []
 		"Basis II der FGr TW": []
@@ -43,7 +43,6 @@ module.exports = class FachausbildungProgress extends QualAusb
 		return null
 	@levelRequirements: (obj, list) -> 1
 	@levelDisplay: (obj, level) -> 
-		debugger
 		@shortname[obj.selected] + ': ' + obj.percent + '%'
 	@validChecks: []
 

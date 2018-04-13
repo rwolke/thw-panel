@@ -12,12 +12,14 @@ module.exports = class PSAgA extends Qualification
 		"PSAgA - UW": ["PSAgA"]
 		"PSAgA-Multi Auffrischung": ["PSAgA","PSAgA-Multi","PSAgA - UW"]
 	@levelRequirements: 
+		4: [["PSAgA-Multi"]]
 		2: [["PSAgA-Multi"]]
 		1: [["PSAgA"]]
 	@levelDisplay: 
-		2: "PSAgA-Multi"
+		4: "PSAgA-Multi"
+		2: "PSAgA Mult inakt."
 		1: "PSAgA"
 	@validChecks: [
-		{level: 3, req: "PSAgA", display: "UW"}
-		{level: 2, req: "PSAgA-Multi", display: "Multi"}
+		{level: 7, req: "PSAgA", display: "UW"}
+		{level: 4, req: "PSAgA-Multi", display: "Multi", degrade: 4, degradeDelay:0, keepFail:true }
 	]

@@ -37,14 +37,14 @@ module.exports = class Fach extends QualAusb
 			2048: ['B', 'Bergung'],
 			1024: ["BrB", "Brückenbau"]
 			512: ["E", "Elektroversorgung"]
-			256: ["FK", "Führung und Kommunikation"]
-			128: ["L", "Logistik Trupp Verpflegung"]
+			256: ["FK", "FK"]
+			128: ["L", "LogTruppVerpfl."]
 			64: ["MotSä", "Motorsäge"]
 			32: ["O", "Ortung"]
 			16: ["R", "Räumen"]
-			8: ["TW", "Trinkwasserversorgung"]
+			8: ["TW", "TW"]
 			4: ["W", "Wassergefahren"]
-			2: ["WP", "Wasserschaden / Pumpen"]
+			2: ["WP", "WP"]
 			1: ["ZTr", "Zugtrupp"]
 		return list[x][1] if x of list
 		sel = []

@@ -76,7 +76,10 @@ App = class MainApp extends Backbone.Router
 	print: ->
 		@pdf = new PDF()
 		cards = []
-		list = @hl.where({Zug:'1. TZ'})
+		list = _.flatten [
+			@hl.where Zug: '1. TZ'
+			@hl.where Zug: 'FGr FK'
+		]
 		for he in list
 			cards.push new Card Config, @pdf, he
 		

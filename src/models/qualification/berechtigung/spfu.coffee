@@ -22,7 +22,7 @@ module.exports = class SpFu extends Qualification
 		8: "SpFuFü"
 		4: "SpFuGA"
 		2: "SpFu - Analog"
-		1: "SpFu - Verschw."
+		1: "SpFu nur Verschw."
 	@validChecks: [
 		{level: 30, req: "Verschwiegenh. Verpfl. gem. § 1 Abs. 1-3 Verpfl.G.", expire:false, display: "Verschw."}
 	]

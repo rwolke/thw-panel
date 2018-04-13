@@ -16,9 +16,12 @@ class Helfer extends Backbone.Model
 	
 	_genFunktion: (fkt) ->
 		m = "Männlich" is @get "Geschlecht"
-		for f in @get('Funktion').split ' '
+		parts = @get('Funktion').split /[ -]/
+		for f in parts
 			if "/in" is f.substr -3
 				f = f.substr 0, f.length-3
+				if f is "Leiter"
+					return if m then f + " FGr FK" else f + "in FGr FK"
 				return if m then f else f + "in"
 			if "/r" is f. substr 0, f.length-2
 				f = f.substr 0, f.length-2
